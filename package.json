@@ -1,0 +1,21 @@
+{
+  "name": "performa-capi-piloto-diagonal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Piloto teorico: envio de conversoes do CRM (Diagonal) para Meta via Conversions API. Ver README.md.",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "poll": "ts-node scripts/run-daily-poll.ts",
+    "test-events": "ts-node scripts/send-test-events.ts",
+    "create-custom-conversions": "ts-node scripts/create-custom-conversions.ts"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.6.0"
+  }
+}
